@@ -1,0 +1,40 @@
+form {
+    grid-column: 3/5;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: auto;
+  }
+  
+  form label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  form input {
+    width: 150px;
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #0000ff;
+    border: 1px solid #ddd;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  form button:hover {
+    background-color: #000c66;
+    cursor: pointer;
+  }
+
+  a#locate img{
+    height: 1.5em;
+    padding: 0 0.5em;
+    color:#0000ff;
+  }
