@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { celcius } from '../utils/Converter'
-import { Hour } from './Hour'
+import { ThumbnailCardHour } from './ThumbnailCardHour'
 
 export function NextHours({ data }) {
 
@@ -11,7 +11,7 @@ export function NextHours({ data }) {
         <ul className="next-hours">
             {
                 data ?
-                    data.hourly.map((hour, index) => <Hour key={index} index={index} data={hour} />) : null
+                    data.hourly.map((hour, index) => <ThumbnailCardHour key={index} data={hour} />) : null
             }
         </ul>
     </section>

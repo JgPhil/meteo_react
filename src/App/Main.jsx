@@ -21,16 +21,16 @@ export function Main() {
         setCity(data["geoplugin_city"]);
     }
 
-    useEffect( async () => {
+    useEffect(async () => {
         const newData = await oneCallAPI(city)
         setData(newData)
     }, [city])
 
-    return <>
+    return <div id="main">
         <Header
             handleCitySearch={handleCitySearch}
             handleLocate={handleLocate}
         />
         <DataSection data={data} city={city} />
-    </>
+    </div>
 }

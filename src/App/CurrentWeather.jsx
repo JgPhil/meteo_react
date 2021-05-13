@@ -26,10 +26,10 @@ export function CurrentWeather({ data, city, getConditions, openWeatherMapIcon }
     return <div className="actual-weather">
         <div id="actual-weather" className={conditionsClassName}>
             <img src={icon} alt="" />
-            <div className="today">Aujourd'hui</div>
-            <div id="description"><span style={{ color: "black" }} > {description} </span></div>
-            <h2 id="actual-temp"><span style={{ color: "black" }} > {currentTemp} </span></h2>
-            <div id="location"><span style={{ color: "black" }} > {location} </span></div>
+            <div className="today">Maintenant</div>
+            <div id="description"> {description}</div>
+            <h2 id="actual-temp"> {currentTemp}</h2>
+            <div id="location"> {location}</div>
         </div>
     </div>
 }
